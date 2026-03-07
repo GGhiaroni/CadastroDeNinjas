@@ -11,13 +11,18 @@ public class MissoesController {
         return "Missões listadas com sucesso.";
     }
 
+    @GetMapping("/id")
+    public String mostrarMissao(){
+        return "Missão mostrada com sucesso.";
+    }
+
     @PostMapping("/criar")
     public String criarMissao(){
         return "Missão criada com sucesso.";
     }
 
-    @PutMapping("alterar/id")
-    public String alterarMissao(){
+    @PutMapping("atualizar/id")
+    public String atualizarMissao(){
         return "Missão alterada com sucesso.";
     }
 

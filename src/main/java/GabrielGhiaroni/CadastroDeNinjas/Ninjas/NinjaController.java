@@ -11,14 +11,14 @@ public class NinjaController {
         return "Boas vindas ao sistema!";
     }
 
-    @GetMapping("/todos")
-    public String mostraTodosOsNinjas(){
+    @GetMapping("/listar")
+    public String listarNinjas(){
         return "Mostrar todos os ninjas.";
     }
 
-    @GetMapping("/todos/id")
-    public String mostrarNinjaPorId(){
-        return "Mostrando ninja por ID.";
+    @GetMapping("/id")
+    public String mostrarNinja(){
+        return "Ninja mostrado com sucesso.";
     }
 
     @PostMapping("/criar")
@@ -26,12 +26,12 @@ public class NinjaController {
         return "Ninja criado com sucesso.";
     }
 
-    @PutMapping("/atualizar/id")
+    @PutMapping("atualizar/id")
     public String atualizarNinja(){
         return "Ninja atualizado com sucesso.";
     }
 
-    @DeleteMapping("/deletar/id")
+    @DeleteMapping("deletar/id")
     public String deletarNinja(){
         return "Ninja deletado com sucesso.";
     }
